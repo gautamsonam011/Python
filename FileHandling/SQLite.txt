@@ -1,0 +1,90 @@
+PythonSQLite:---->
+
+Python sqlite3 is an excellent module with which you can perform all possible DB operations with in-memory and persistent database in your applications.
+
+This module implements the python DB API interface to be a compliant solution for implementing SQL relatedd operations in aprogram.
+
+Using sqlite3 module:---->
+
+By the help of sqlite3 we can create databases and tables inside it and perform various DB operations on it.
+
+Connect to SQLite Database in Python:-------->
+
+import sqlite3
+
+con = sqlite3.connect("hello.db")
+
+print("Database connected!!")
+
+
+Create Table in SQLite Databse using python:---------->
+
+Now we will create new table called "Product" in previously created database named hello.db using python programming.
+
+import sqlite3
+
+con = sqlite3.connect("hello.db")
+cur = con.cursor()
+
+cur.execute("CREATE TABLE Product(p_id INTEGER PRIMARY KEY AUTOINCREMENT, p_name TEXT NOT NULL,price REAL,quantity INTEGER)");
+
+print("Table created!!")
+con.close()
+
+
+Insert Data in SQLite Table using python:------------------>
+
+Now we will insert data in previously created SQLite table called "Product" using python for that
+write the code.
+
+import sqlite3
+
+con = sqlite3.connect("hello.db")
+cur = con.cursor()
+
+cur.execute("INSERT INTO Product(p_name,price,quantity)VALUES('AutoCAD',200,20));
+
+print("Data Inserted!!!")
+con.commit()
+con.close()
+
+
+Display data from SQLite Table in python:------------->
+
+Now we will display or show the data from SQLite table called "Product" using python.
+
+import sqlite3
+
+con = sqlite3.connect("hello.db")
+
+cur = con.cursor()
+
+print("p_id\t _name \t price \t quantity \n")
+
+cursor = cur.execute("SELECT* FROM Product");
+
+for row in cursor:
+        print(row[0], "\t", row[1], "\t", row[2], "\t", row[3], "\n")
+
+con.close()
+
+Update SQLite Table Data Using Python:------------>
+
+Now we will update "Product" table quantity value by one more 
+
+import sqlite3
+
+con = sqlite3.connect("hello.db")
+cur = con.cursor()
+
+cur.execute("Update Product SET quantity = quantity+1");
+
+con.commit()
+
+print("p_id \t p_name \t price \t quantity \n")
+cursor = cur.execute(SELECT*FROM Product);
+
+for row in cursor:
+    print(row[0], "\t",row[1],"\t",row[2],"\t",row[3],"\n")
+
+con.close()

@@ -1,0 +1,175 @@
+Exception in Python:~~~~~~~~~~~~~~~~~~~~~~~~
+
+An exception is an error that occurs during excution of programme. Python generate an exception that can be handled, which avoid crash our programme.
+
+If we can not handle exception then our programme will be crash so to avoid crashing of our programmer. and error message will show on cmd by python.
+
+Handle Exception:-~~~~~~~~~~~~~~~~~~~~~`````
+
+The malicious code can be handled by help of the try block. If exceeption raises inside the try block. The try block is followed except statement.
+
+try:
+    maliccious code
+except Exception01:
+    execute code 01
+except Exception02:
+    execute code 02
+else:
+    print("Please your input or code")
+    
+    
+Finally block:~~~~~~~~~~~`
+
+If there is any code which we want to be executed, whether exception generate or not then code can be placed inside the finally block. Finally will always be executed for every condition.
+
+try:
+    malicious code
+finally:
+    code which we want must execute
+    
+    
+Built-In Exception:--~~~~~~~~~~~~~~~~~~~~~~`>
+
+Exception                        Exception Event
+
+ArithmeticError              Raised when mathematical calculations fails
+ImportError                  Raised when the imported module is not found
+IndexError                   Raised when index of a sequence is out of range
+ValueError                   Raised when a function gets argument of correct type but improper value
+KeyError                     Raised when the specified key is not found in the dictionary
+NameError                    Raised when an identifier is not found in the local or global namespace
+TypeError                    Raised when an input/output operation fails.
+
+
+What is File Handling:~~~~~~~~~~~~~~~~~~~~~~>
+
+File is a named location on disk to store related information. It is used to permanently store data in memory(e.g hard disk).
+
+There are three operation in File Handling
+
+1. Open a File
+2. Read or Write
+3. Close a File
+
+Open a File:--~~~~~~~~~~>
+
+Python has a built-in function open() to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file.
+
+File Opening Mode:~~~~~~>
+
+Mode                   Description
+
+'r'                   Open a file in read mode
+'w'                   Open a file in write mode
+'a'                   Open a file in append mode
+'r+'                  Open file for reading and writing. File pointer placed at beginning of the file.
+'w+'                  Same as 'w' but also allows to read from file
+'a+'                   Same a 'a' but also open for reading
+
+f = open("hello.txt")    # default mode in read mode 'r'
+
+f = open("test.txt",'w') # write in text mode
+
+f = open("hello.txt", mode = 'r', encoding = 'utf-8')
+
+Close a File:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``>
+
+When we are done with operations to the file, we need to properly close the file.
+
+Closing a file is done using python close() method.
+
+f = open("test.txt", encoding = 'utf-8')
+# perform file operations
+f.close()
+
+Close a File using with:~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+We don't need to explicitly call the close() method. It is done internally.
+
+with open("hello.txt",encoding = 'utf-8') as f
+# perform file operations
+
+
+Write a File:~~~~~~~~~~~~~~~``>
+
+If we want to write into a file in python, we need to open it in write 'w', append 'a' mode.
+
+We need to be careful with the 'w' mode as it will overwrite into the file if it already exists. All previous data are erased.
+
+Methods for write a file:-
+
+    write(string)
+    writelines(list)
+    
+writelines():-
+Python also contains the methods writelines() to write multiple lines in one step.
+
+writelines() with 'a+' mode
+
+write a list to this with a+ mode:-
+
+Read a File:-~~~~~~~~~~~~~>
+
+If we want to read into a file in python, we must to open it in read 'r' mode.
+We can read file complete in once or we can read it in part that is size.
+
+Methods for read a file:-
+
+1. read()         # return one big string
+2. readline()     # return one line at a time
+3. readlines()    # returns a list of lines
+
+
+What is pickling?~~~~~~~~~~~~~~~~~~~~~~~~~``````~~~~~>
+
+Pickle is used for serialising and de-serialising python object structures.
+
+If we do not to change the datatypes of the variables then we use pickle, in normal file operation all the data of a file is consider as string so by the help of pickle there is no need to convert all the datatypes in to string.
+
+Pickling files: dump():~~~~~~~~~~~`>
+
+To open the file for writing, simply use the open() function.
+The first argument should be the name of your file.
+The second argument is 'wb'. The w means that you will be writing to the file, and b refers to binary mode.
+This means that the data will be written in the form of byte objects. If you forget the b, a TypeError: must be str, not bytes will be returned.
+You may sometimes come across a slightly different notation; w+b, but don't worry, it provides the same functionality.
+
+wb->write binary operation.
+
+Pickling files:dump():~~~~~~~~~~~~~~~~~~~~>
+
+import pickle
+
+# define a list of places
+
+placesList = ['Berlin','Cape Town', 'Sydney','Moscow']
+
+with open('listfile.txt','wb') as filehandle:
+    # store the data as binary data stream
+    pickle.dump(placesList,filehandle)
+    
+ 
+import pickle
+
+list = ['python','php',"js",'java']
+with open('hey.txt','wb') as h:
+    pickle.dump(list,h)
+    
+    
+Unpickling files: load():-~~~~~~~~~~~~~~~~~~~~>
+
+The process of loading a pickled file back into a python program is similar to the one you saw previously: use the open() function again, but this time with 'rb' as second argument (instead of wb).
+
+The r stands for read mode and the b stands for binary mode.
+
+You will be reading a binary file. use pickle.load(), with filehandle as argument, and assign it to placeslist.
+
+The contents of the file are now assigned to this new variable. Again, you will need to close the file at the end.
+
+
+import pickle
+
+with open("hey.txt",'rb') as h:
+    a = pickle.load(h)
+print(a)
+

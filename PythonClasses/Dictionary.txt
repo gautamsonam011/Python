@@ -1,0 +1,44 @@
+Dictionary:---->
+
+Dictionary is listed in curly brackets, inside these curly brackets, keys and values are declared.
+
+Each key is separated from its value by a colon (:) while each element is separated by commas.
+
+The values in the dictionary can be of any type while the keys must be immutable like numbers, tuples or strings.
+
+d = {key:value}
+
+d1 = {1:"apple",2:"banana"}
+print(d1)
+
+
+
+Access Element of Dictionary:---->
+
+While indexing is used with other container types to access values, dictionary uses keys.
+
+Key can be used either inside square brackets or with the get() method.
+
+my_dict = {1:98,'h':"hello"}
+
+
+Dictionary Methods:---------->
+
+clear()   => Remove all items form the dictionary.
+items()   => Return a new view of the dictionary's keys and values tuple pair.
+popitem() => Remove and return an arbitrary item (key, value). Raises keyError if the dictionary is empty.
+keys()    => Return a new view of the dictionary's keys.
+values()  => Return a new view of the dictionary's values.
+
+
+
+Iterating in Dictionary:--------->
+
+dict = { "name":"shi","class":11,"subject":"sci"}
+
+print(dict)
+
+Get all the key from dictionary---->
+
+for a in dict:
+    print(a)

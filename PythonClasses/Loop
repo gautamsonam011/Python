@@ -1,0 +1,105 @@
+What is Loop Statement?
+
+When we want execute a block of code multiple time then we use loop statement.
+
+Start
+        Process will repeat until
+        condition is not false
+
+                                 Body of loop
+
+Condition   If Loop condition is True
+
+
+if loop condition false then it's exit
+
+
+
+Types of Loop:-
+
+1:- For Loop
+2:- While Loop
+3:- Nested Loop
+
+While Loop:----
+
+The while loop in python is used to iterate over a block of code as the test expression (condition) is True.
+
+Syntax of while loop:-
+
+while(condition):
+    statement...
+    condition control statement
+    
+                       Enter while loop
+    
+                       check condition     False
+            
+ Process will repeat until      True
+ condition is not false          
+ 
+                            Body of While Loop    Exit from loop
+                            
+                            
+a = 0
+while a<10:
+    print(a)
+    a = a+1
+    
+    
+    
+For Loop:---
+
+When we want execute a block od code in given range than we use for loop.
+
+In for loop interpreter check always last condition of range when this condition is reach then for loop is terminate.
+
+
+                Each Item in sequence
+                
+                Check last element of sequence     Yes
+                
+                            No
+                            
+                            Body of for            Exit from loop
+                            
+                            
+
+
+range() function:---
+
+When we want to generate a sequence of number in python with for loop then we use range() function. range() function is always generate a integer number.
+
+How range() function work
+
+1. With single argument:-
+
+for a in range(5):
+    print(a)
+    
+2. With double argument:-
+
+for i in range(1,11):
+        print(i)
+        
+3. With triple argument:-
+
+for i in range(1,21,2):
+        print(i)
+        
+4. Reverse range() function:-
+
+When we want execute range() function in reverse then there is always pass three argument.
+
+for a in range(10,0,-1):
+            print(a)
+            
+            
+For with datatypes:------------
+
+A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary,a set, or string).
+
+a = "Welcome to Here"
+
+for s in a:
+    print(s,end=",")

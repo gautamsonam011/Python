@@ -1,0 +1,34 @@
+String Format:-~~~~~~~~~~~~~~~~>
+
+Python's format() method of the string class allows you to do variable substitutions and value formatting.
+
+This lets you concatenate elements together within a string through positional formatting.
+
+Using Formatters:~~~~~~~~~~~~~`>
+
+Formatters work by putting in one or more replacement fields or placeholders - defined by a pair of curly braces {} -into a string and calling the str.format() method.
+
+You will pass into the method the value you want to concatenate with the string.
+
+This value will be passed through in the same place that your placeholder is positioned when you run the program.
+
+Example:-
+    print("Python is most {} programming language. ".format("simplest"))
+    
+# Using formatters with multiple 
+placeholders:~~~~~~~~~~~~`>
+
+We can use multiple pairs of curly braces when using formatters:~~~~~~~~~~~~~~~>
+
+If we'd like to add another variable substitution to the sentence above, we can do so by adding a second pair of curly braces and passing a second value into the method.
+
+Example:-
+    open_string = "Python is multi paradigm programming language, it support {} and {}"
+    print(open_string.format("Object oriented programming","Producer programming"))
+    
+Reordering Formatters with positional and keyword arguments:~~~~~~~~~>
+
+When we leave curly braces empty without any parameters, python will replace the values passed through the str.format() method in order.
+
+
+

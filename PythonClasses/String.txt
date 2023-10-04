@@ -1,0 +1,61 @@
+What is String?
+
+String is a sequence of character.
+
+A string always a written between '' , "" or ''' '''.
+
+a = "welcome"
+
+As we know thata python is zero indexing programming language.
+
+Access Element in String:---------
+
+str = 'veronica'
+
+-8 -7 -6 -5 -4 -3 -2 -1
+ v  e  r  o  n  i  c  a
+ 1  2  3  4  5  6  7  8
+ 
+ 
+ 
+ Slicing in String:-
+ we use '+' operator for concatenation of two or more String
+ 
+ str1 = 'hello!'
+ str2 = 'world'
+ 
+ print(str1+str2)
+ 
+ Iterating using String:-
+ 
+ If we want count sub-string from main-string it possible using for loop.
+ 
+count = 0
+a = "Hello"
+for sub in a:
+    if(sub == 'w'):
+        count+=1
+print(count)
+
+
+String Membership test------->
+
+In membership test we show that sub string is present in main string or not if sub string is present than output is True otherwise output is False.
+
+print('a' in 'apple')
+print('b' in 'apple')
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Break Statement and Continue Statement
+
+In Python, the break statement provides you with the opportunity to exit from loop when an external condition is reached.
+
+We can put break statement with in the loop.
+Generally break statement in apply just after if statement.
+
+Continue Statement------------>
+
+The continue statement gives you the option to skip a particular part of a loop where an external condition is reached.
+
+The continue statement will be within the block of code under the loop statement, usually after a conditional if statement.
+

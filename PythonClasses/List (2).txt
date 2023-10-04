@@ -1,0 +1,82 @@
+List--------------->
+
+1. Lists are ordered.
+2. Lists can contain any arbitrary objects.
+3. List elements can be accessed by index.
+4. Lists are mutable.
+
+Creating a List:----
+
+l = [] empty list
+l = [1,2,3,4,5] (Integer list)
+l = ['a','b','c'] (String list)
+l = [1,2,'this',[1,2,3],{1,2,3}] (mix list)
+
+Note:- If there is a list in list then this is called Nested List.
+
+
+Access Element of list:------------->
+
+list1 = ['s','h','i','v']
+
+print(list1[0])
+
+Slicing Of List-------------->
+
+print(list1[1:])
+print(list1[1:5])
+print(list1[:4])
+print(list[:])
+print(list1[-4:-1])
+
+Iterating in List:------>
+
+list1 = [1,2,3,4,5]
+for a in list1:
+        print(a)
+        
+        
+List Function:-
+
+append()   => Add an element to the end of the list.
+extend()   => Add all elements of a list to the another list.
+insert()   => Insert an item at the defined index.
+remove()   => Removes an item from the list.
+pop()      => Removes and returns an element at the given index()    => Returns the index of the first matched item
+clear()    => Removes all items from the list
+count()    => Returns the count of number of items passed as an argument.
+reverse()  => Reverse the order of items in the list.
+sort()     => Sorts the list.
+
+# append()----> The append() method adds a single item to the existing list.
+Syntax:-
+    list.append(item)
+
+# extend()----> The extend() method adds items to list.
+Syntax:-
+      list1.extend(list2)
+     
+     
+# insert()----> The insert() method inserts the element to the list at the given index.
+
+Syntax:-
+    list.insert(index,item)
+    
+    
+# remove()---->The removes() method searches for the given element in the and removes the first matching element.
+
+Syntax:-
+    list.remove(element)
+    
+    
+# pop()----> The pop() method removes and returns the element at the given index (passed as an argument) from the list.
+
+Syntax:
+    list.pop(index)
+    
+# clear()-----> The clear() method removes all items from the list.
+
+Syntax:-
+    list.clear()
+    
+    

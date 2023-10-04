@@ -1,0 +1,48 @@
+What is Conditional Statement?
+
+Conditional statement are used to execute a statement when condition is True.
+
+Type of conditional Statement--->
+
+1:- if statement
+2:- if-else statement
+3:- if-elif-else statement
+
+1:- In if statement a particular block of code is execute when if condition is True.
+
+Some Logical Condition
+
+Equals: a==b
+Not Equals: a!=b
+Less than a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+syntax:-
+
+if(condtion):
+    "Body Of If Statement"
+
+2:- In if-else statement when if condition become True then body of if statement will execute otherwise body of else will execute.
+
+Syntax:-
+
+if (condition):
+        statement
+else:
+        statement
+        
+        
+3:- When we have multiple condition expression then we use if-elif-else statement. When all codition of if-elif will False then body of else will execute.
+
+Note:-There is not  switch case in python.
+
+Syntax:-
+
+if (condition):
+    statement
+elif (condition):
+    statement
+else:
+    statement

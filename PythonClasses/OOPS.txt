@@ -1,0 +1,114 @@
+Introduction to OOP's in Python:-------------->
+
+Python is a multi-paradigm programming language. Meaning, it supports different programming approach. 
+
+One of the popular approach to solve a programming problem is by creating objects. This is known as object-oriented programming(OOP).
+
+It deals with declaring python classes, creating objects from them and interating with the users.
+
+What is a python class?
+Methods and Attributes in a class.
+What are objects?
+Constructer in python
+OOPs Concepts:-
+    Inheritance
+    Polymorphism
+    Encapsulation
+    Abstraction
+    
+What is a Python Class?------------>
+
+A class is a code template for creating objects.
+
+Objects have member variables and have behavior associated with them.
+In python a class is created using the constructor of the class. This object will then be called the instance of the class.
+
+Using a class, you can add consistency to your programs so that they can be used in cleaner and efficient ways.
+
+~ Class variable:-is a variable that is shared by all the different objects/instances of a class.
+
+~ Instance Variables:- are variables which are unique to each instance. It is defined inside a method and belongs only to the current instance of a class.
+
+~ Methods:-are also called as functions which are defined in a class and describes the behaviour of an object.
+
+How to create a class?-------------->
+
+The simplest class can be created using the class keyword.
+
+class MyClass:
+    x = 5
+new_myclass = MyClass()
+print(new_myclass)
+
+Inheritance:-------------->
+
+If we use methods, variables and functions of a class into other class, this is called Inheritance.
+
+Parent class or Base class ------------------->Child class or Derived class
+                            Inherit Property
+                            
+Inheritance Syntax:-
+    
+    class BaseClass:
+        Body of base class
+    class DerivedClass(BaseClass):
+        Body of derived class
+
+Derived class inherits features from the base class, adding new features to it. This results into re-usability of code.
+
+Type of Inheritance:-
+
+There are 3 type of inheritance in python:-
+1. Single Inheritance
+2. Multi-level Inheritance
+3. Multiple Inheritance
+
+Single Inheritance:-
+
+In Single inheritance, We have two classes A and B, where A is the super class, B is its sub(child).
+
+Person <---------------Student
+
+Multi-level Inheritance:---
+
+In multi-level inheritance, we inherit the classes at multiple separate levels. We have three classes A, B and C, where A is the super class, B is its sub(child) class and C is the sub class of B.
+
+ClassA <--------------ClassB <-----------ClassC
+
+Multiple Inheritance :-
+
+It is when a class can inherit attributes and methods from more than one parent class.
+
+A------------>C<-----------B
+
+Polymorphism:-~~~~~~~~~~~~~~~~~~~~>
+
+Polymorphism is an ability (in OOP) to use common interface for multiple form (data types).
+
+Suppose, we need to color a shape, there are multiple shape option (rectangle, square, circle).
+
+However we could use same method to color any shape. This concept is called polymorphism.
+
+Attributes and Methods in class:~~~~~~~~~~~~~~
+
+Functionalities can be defined by setting various attributes which acts as a container for data and functions related to those attributes.
+
+Functions in python are also called as Methods.
+
+Talking about the init method, it is a special function which gets called whenever a new object of that class is instantiated.
+
+Constructor in Python:~~~~~~~~~~~~~~~~~~>
+
+If we want create a constructor in python then we user __init__() function. And if we does not create constructor then default constructor will called.
+
+Encapsulation:~~~~~~~~~~~~~~~~~~~~~~~````>
+
+Using oop's in python, we can restrict access to methods and variables.
+
+This prevent data from direct modification which is called encapsulation.
+
+In python, we denote private attribute using underscore as prefix i.e. single  "_" is double "__".
+
+Where _ is use for protected attreibuted attribute and __ is use for private attribute.
+
+
